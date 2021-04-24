@@ -358,3 +358,21 @@ pkill -kill -t pts/2 #使用pkill命令将想踢出的用户踢出去（这里�
 .tar.gz 和 .tgz
 解压：tar zxvf FileName.tar.gz
 压缩：tar zcvf FileName.tar.gz DirName
+
+
+
+### 创建用户
+
+```sh
+adduser #DeBian系的命令
+useradd #通用
+```
+
+### 提升用户权限
+
+```sh
+#位于 /etc/sudoers（文件需要修改为可写入640，完成后修改回440） 里的
+root    ALL=(ALL)     ALL
+#后面添加对应用户
+```
+
